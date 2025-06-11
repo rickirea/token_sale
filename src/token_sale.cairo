@@ -47,7 +47,7 @@ mod TokenSale {
     ) {
         self.owner.write(owner);
         self.accepted_payment_token.write(accepted_payment_token);
-        // self.ownable.initializer(owner);
+        self.ownable.initializer(owner);
     }
 
     #[abi(embed_v0)]
