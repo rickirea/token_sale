@@ -13,8 +13,8 @@ mod TokenSale {
     component!(path: OwnableComponent, storage: ownable, event: OwnableEvent);
 
     //External
-    // #[abi(embed_v0)]
-    // impl OwnableMixinImpl = OwnableComponent::OwnableMixinImpl<ContractState>;
+    #[abi(embed_v0)]
+    impl OwnableMixinImpl = OwnableComponent::OwnableMixinImpl<ContractState>;
 
     //Internal
     impl UpgradeableInternalImpl = UpgradeableComponent::InternalImpl<ContractState>;
